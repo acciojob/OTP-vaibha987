@@ -20,7 +20,7 @@ codes.forEach((code,index)=>{
               }
         }
     })
-    code.addEventListener("blur", ()=>{
-          code.classList.remove("focused")
-    })
+    //code.addEventListener("blur", ()=>{
+      //    code.classList.remove("focused")
+    //})
 })
