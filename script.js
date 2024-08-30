@@ -8,11 +8,13 @@ let codes = document.querySelectorAll(".code")
 		code.value=event.key
 		if(codes[index+1])
 		codes[index+1].focus()
+		codes[index+1].classList.add("focused")
 	}
 		else if(event.key==="Backspace"){
 		code.value=""
 			if(codes[index-1]){
-		   codes[index-1].focus()	
+		   codes[index-1].focus()
+		   codes[index-1].classList.add("focused")		
 		}
 		}
 	})
