@@ -7,14 +7,14 @@ codes.forEach((code,index)=>{
             code.value = event.key
             if(codes[index+1]) {
                 codes.forEach(code => code.classList.remove("focused"));
-                setTimeout(() => codes[index + 1]?.focus(), 10);
+                setTimeout(() => codes[index + 1]?.focus(), 50);
                 codes[index+1].classList.add("focused")
             }
         } else if(event.key === "Backspace"){
             code.value = ""
             if(codes[index-1]) {
                 codes.forEach(code => code.classList.remove("focused"));
-                setTimeout(() => codes[index - 1]?.focus(), 10);
+                setTimeout(() => codes[index - 1]?.focus(), 50);
                 codes[index-1].classList.add("focused")
             }
         }
